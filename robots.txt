@@ -1,0 +1,31 @@
+
+User-agent: *
+Allow: /
+Crawl-delay: 1
+Sitemap: https://eyedolise.github.io/unityapi/sitemap.xml
+
+# GitHub-specific exclusions
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /*.md$
+Disallow: /*.json$
+Disallow: /*.lock$
+
+# Block AI crawlers (protect your unity api data)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Business info
+# Unity API - Integration Tool
+# Contact: nlcgpt1@gmail.com | (868) 278-0240
+# Last Updated: 2025-12-30
