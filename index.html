@@ -1217,6 +1217,31 @@ alt="real time web analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
+<script>
+const params = new URLSearchParams(window.location.search);
+const ref = params.get("ref");
+
+
+if (ref) {
+
+  // Statcounter config
+  window.sc_project = 13059228;
+  window.sc_invisible = 1;
+  window.sc_security = "961d2ded";
+
+  // Optional custom tracking value
+  window.sc_custom = "affiliate:" + ref;
+
+  // Load Statcounter dynamically
+  const sc = document.createElement("script");
+  sc.type = "text/javascript";
+  sc.async = true;
+  sc.src = "https://www.statcounter.com/counter/counter.js";
+
+  document.head.appendChild(sc);
+}
+</script>
+
 </body>
 </html>
 
